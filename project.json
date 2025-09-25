@@ -1,0 +1,530 @@
+{
+	"programVersion": 2,
+	"versionName": "11.1",
+	"name": "ChartDemo",
+	"mainDiagram": {
+		"tables": [
+			{
+				"gid": 3102223768,
+				"y": 10,
+				"x": 153,
+				"width": 146.1999969482422,
+				"height": 179.60000610351562
+			},
+			{
+				"gid": 3731193179,
+				"y": 10,
+				"x": 895,
+				"width": 136.10000610351562,
+				"height": 39.60000228881836
+			},
+			{
+				"gid": 2603917201,
+				"y": 11,
+				"x": 13,
+				"width": 107.2874984741211,
+				"height": 179.60000610351562
+			},
+			{
+				"gid": 2709061285,
+				"y": 10,
+				"x": 330,
+				"width": 238.8249969482422,
+				"height": 123.5999984741211
+			},
+			{
+				"gid": 1576970471,
+				"y": 10,
+				"x": 595,
+				"width": 273.8374938964844,
+				"height": 123.5999984741211
+			},
+			{
+				"gid": 2749073996,
+				"y": 65,
+				"x": 895,
+				"width": 115.5999984741211,
+				"height": 39.60000228881836
+			},
+			{
+				"gid": 807989536,
+				"y": 120,
+				"x": 895,
+				"width": 157.875,
+				"height": 179.60000610351562
+			}
+		]
+	},
+	"securitySettings": {
+		"sessionControl": {
+			"lifeTime": 15,
+			"sessionName": "bY3ATIyYMYUmfNpxUd8N",
+			"JWTSecret": "QVWU2j4E9DfHo6mmXzgA"
+		},
+		"registration": {
+			"remindMethod": 0,
+			"hashAlgorithm": 0,
+			"passwordValidation": {
+				"strong": false,
+				"minimumLength": 8,
+				"uniqueCharacters": 4,
+				"digitsAndSymbols": 2,
+				"upperAndLowerCase": false
+			}
+		},
+		"captchaSettings": {
+			"captchaType": 0,
+			"siteKey": "",
+			"secretKey": "",
+			"passesCount": 5
+		},
+		"emailSettings": {
+			"fromEmail": "b146cae5e82e1c@example.com",
+			"usePHPDefinedSMTP": false,
+			"useBuiltInMailer": false,
+			"SMTPServer": "sandbox.smtp.mailtrap.io",
+			"SMTPPort": 25,
+			"SMTPUser": "b146cae5e82e1c",
+			"SMTPPassword": "8eb48a8b886890",
+			"securityProtocol": 0
+		},
+		"advancedSecurity": {
+			"allowGuestLogin": false
+		},
+		"auditAndLocking": {
+			"loggingMode": 0,
+			"loggingTable": {
+				"connId": "",
+				"table": ""
+			},
+			"loggingFile": "audit.log",
+			"logSecurityActions": false,
+			"lockAfterUnsuccessfulLogin": false,
+			"enableLocking": false,
+			"lockingTable": {
+				"connId": "",
+				"table": ""
+			},
+			"tables": {}
+		},
+		"twoFactorSettings": {
+			"available": false,
+			"required": false,
+			"enable": true,
+			"remember": true,
+			"types": {},
+			"twoFactorField": "",
+			"emailField": "",
+			"phoneField": "",
+			"codeField": "",
+			"projectName": ""
+		},
+		"staticPermissions": {
+			"groups": {}
+		}
+	},
+	"dbConnections": [
+		{
+			"id": "conn",
+			"name": "chart_demo at localhost",
+			"connString": "mysql;localhost;root;;;chart_demo;;1"
+		}
+	],
+	"defaultConnID": "conn",
+	"landingSettings": {
+		"table": "Dashboard",
+		"pageId": "dashboard",
+		"page": "dashboard",
+		"url": "Dashboard_dashboard.php?page=dashboard"
+	},
+	"menus": [
+		{
+			"id": "main",
+			"root": {
+				"children": [
+					{
+						"id": "1",
+						"data": {
+							"name": {
+								"table": "record",
+								"type": 6
+							},
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-earphone",
+							"showIconType": 2,
+							"table": 2603917201,
+							"pageType": "list"
+						}
+					},
+					{
+						"id": "2",
+						"data": {
+							"name": {
+								"table": "Carta Cuaca",
+								"type": 6
+							},
+							"pageId": "chart",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-camera",
+							"showIconType": 2,
+							"table": 3102223768,
+							"pageType": "chart"
+						}
+					},
+					{
+						"id": "3",
+						"data": {
+							"name": {
+								"table": "sales_by_product_category",
+								"type": 6
+							},
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-briefcase",
+							"showIconType": 2,
+							"table": 2709061285,
+							"pageType": "list"
+						}
+					},
+					{
+						"id": "4",
+						"data": {
+							"name": {
+								"table": "sales_by_product_category chart",
+								"type": 6
+							},
+							"pageId": "chart",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-tree-conifer",
+							"showIconType": 2,
+							"table": 1576970471,
+							"pageType": "chart"
+						}
+					},
+					{
+						"id": "5",
+						"data": {
+							"name": {
+								"table": "Dashboard",
+								"type": 6
+							},
+							"pageId": "dashboard",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-flash",
+							"showIconType": 2,
+							"table": 3731193179,
+							"pageType": "dashboard"
+						}
+					},
+					{
+						"id": "6",
+						"data": {
+							"name": {
+								"table": "sqlView",
+								"type": 6
+							},
+							"pageId": "list",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-earphone",
+							"showIconType": 2,
+							"table": 2749073996,
+							"pageType": "list"
+						}
+					},
+					{
+						"id": "7",
+						"data": {
+							"name": {
+								"table": "weather report",
+								"type": 6
+							},
+							"pageId": "report",
+							"itemType": 2,
+							"linkType": 0,
+							"iconType": 2,
+							"iconName": "glyphicon-send",
+							"showIconType": 2,
+							"table": 807989536,
+							"pageType": "report"
+						}
+					}
+				]
+			}
+		}
+	],
+	"globalPages": [
+		{
+			"id": "menu",
+			"type": "menu",
+			"layoutId": "topbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "menu-topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "welcome",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"welcome_item",
+								"welcome_item1",
+								"welcome_item2",
+								"welcome_item3",
+								"welcome_item4",
+								"welcome_item5",
+								"welcome_item6"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"welcome_item": {
+					"type": "welcome_item",
+					"linkUrl": "",
+					"linkTable": "record",
+					"linkPage": "list",
+					"linkText": {
+						"table": "record",
+						"type": 6
+					},
+					"linkIcon": {
+						"glyph": "earphone"
+					},
+					"linkComments": {
+						"text": "Record description",
+						"type": 0
+					},
+					"background": "#d2691e",
+					"linkType": 0
+				},
+				"welcome_item1": {
+					"type": "welcome_item",
+					"linkUrl": "",
+					"linkTable": "Carta Cuaca",
+					"linkPage": "chart",
+					"linkText": {
+						"table": "Carta Cuaca",
+						"type": 6
+					},
+					"linkIcon": {
+						"glyph": "camera"
+					},
+					"linkComments": {
+						"text": "Carta Cuaca description",
+						"type": 0
+					},
+					"background": "#d2691e",
+					"linkType": 0
+				},
+				"welcome_item2": {
+					"type": "welcome_item",
+					"linkUrl": "",
+					"linkTable": "sales_by_product_category",
+					"linkPage": "list",
+					"linkText": {
+						"table": "sales_by_product_category",
+						"type": 6
+					},
+					"linkIcon": {
+						"glyph": "briefcase"
+					},
+					"linkComments": {
+						"text": "Sales By Product Category description",
+						"type": 0
+					},
+					"background": "#e07878",
+					"linkType": 0
+				},
+				"welcome_item3": {
+					"type": "welcome_item",
+					"linkUrl": "",
+					"linkTable": "sales_by_product_category chart",
+					"linkPage": "chart",
+					"linkText": {
+						"table": "sales_by_product_category chart",
+						"type": 6
+					},
+					"linkIcon": {
+						"glyph": "tree-conifer"
+					},
+					"linkComments": {
+						"text": "Sales By Product Category Chart description",
+						"type": 0
+					},
+					"background": "#e07878",
+					"linkType": 0
+				},
+				"welcome_item4": {
+					"type": "welcome_item",
+					"linkUrl": "",
+					"linkTable": "Dashboard",
+					"linkPage": "dashboard",
+					"linkText": {
+						"table": "Dashboard",
+						"type": 6
+					},
+					"linkIcon": {
+						"glyph": "flash"
+					},
+					"linkComments": {
+						"text": "Dashboard description",
+						"type": 0
+					},
+					"background": "#3cb371",
+					"linkType": 0
+				},
+				"welcome_item5": {
+					"type": "welcome_item",
+					"linkUrl": "",
+					"linkTable": "sqlView",
+					"linkPage": "list",
+					"linkText": {
+						"table": "sqlView",
+						"type": 6
+					},
+					"linkIcon": {
+						"glyph": "earphone"
+					},
+					"background": "#e07878",
+					"linkType": 0
+				},
+				"welcome_item6": {
+					"type": "welcome_item",
+					"linkUrl": "",
+					"linkTable": "weather report",
+					"linkPage": "report",
+					"linkText": {
+						"table": "weather report",
+						"type": 6
+					},
+					"linkIcon": {
+						"glyph": "send"
+					},
+					"background": "#d2691e",
+					"linkType": 0
+				}
+			},
+			"dbProps": {},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"welcomePageStay": true,
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"projectStyle": {
+		"theme": "united",
+		"sidebarColor": "light",
+		"sidebarTheme": "indigo",
+		"topbarTheme": "legacy",
+		"logoTheme": "legacy",
+		"sidebarCustomThemeColor": "legacy",
+		"topbarCustomThemeColor": "legacy",
+		"logoCustomThemeColor": "legacy",
+		"gpHeaderBg": "legacy",
+		"gpHeaderColor": "legacy",
+		"gpFooterBg": "legacy",
+		"gpPanelBorder": "legacy",
+		"gpBorderColor": "legacy",
+		"gpInnerBorder": "legacy",
+		"gpInnerBorderColor": "legacy",
+		"gcOddBg": "legacy",
+		"gcOddColor": "legacy",
+		"gcEvenBg": "legacy",
+		"gcEvenColor": "legacy",
+		"gcRolloverHighlightBg": "legacy",
+		"gcRolloverHighlightColor": "legacy"
+	},
+	"messages": {},
+	"projectLogo": {},
+	"cookieBannerText": {}
+}

@@ -1,0 +1,381 @@
+{
+	"type": 4,
+	"name": "Dashboard",
+	"shortTableName": "Dashboard",
+	"detailsBadgeColor": "3cb371",
+	"dashSearchFields": [
+		{
+			"refs": [
+				{
+					"table": "sales_by_product_category",
+					"field": "id"
+				}
+			],
+			"labels": {
+				"English": "Id"
+			},
+			"field": "sales_by_product_category_id",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "sales_by_product_category",
+					"field": "product_category"
+				}
+			],
+			"labels": {
+				"English": "Product Category"
+			},
+			"field": "sales_by_product_category_product_category",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "sales_by_product_category",
+					"field": "sales_revenue"
+				}
+			],
+			"labels": {
+				"English": "Sales Revenue"
+			},
+			"field": "sales_by_product_category_sales_revenue",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "sales_by_product_category chart",
+					"field": "id"
+				}
+			],
+			"labels": {
+				"English": "Id"
+			},
+			"field": "sales_by_product_category_chart_id"
+		},
+		{
+			"refs": [
+				{
+					"table": "sales_by_product_category chart",
+					"field": "product_category"
+				}
+			],
+			"labels": {
+				"English": "Product Category"
+			},
+			"field": "sales_by_product_category_chart_product_category"
+		},
+		{
+			"refs": [
+				{
+					"table": "sales_by_product_category chart",
+					"field": "sales_revenue"
+				}
+			],
+			"labels": {
+				"English": "Sales Revenue"
+			},
+			"field": "sales_by_product_category_chart_sales_revenue"
+		},
+		{
+			"refs": [
+				{
+					"table": "sqlView",
+					"field": "id"
+				}
+			],
+			"labels": {
+				"English": "Id"
+			},
+			"field": "sqlView_id"
+		},
+		{
+			"refs": [
+				{
+					"table": "sqlView",
+					"field": "location"
+				}
+			],
+			"labels": {
+				"English": "Location"
+			},
+			"field": "sqlView_location"
+		},
+		{
+			"refs": [
+				{
+					"table": "sqlView",
+					"field": "temperature"
+				}
+			],
+			"labels": {
+				"English": "Temperature"
+			},
+			"field": "sqlView_temperature"
+		},
+		{
+			"refs": [
+				{
+					"table": "sqlView",
+					"field": "humidity"
+				}
+			],
+			"labels": {
+				"English": "Humidity"
+			},
+			"field": "sqlView_humidity"
+		},
+		{
+			"refs": [
+				{
+					"table": "sqlView",
+					"field": "datetime"
+				}
+			],
+			"labels": {
+				"English": "Datetime"
+			},
+			"field": "sqlView_datetime"
+		}
+	],
+	"pages": [
+		{
+			"id": "dashboard",
+			"type": "dashboard",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"grid": {
+					"modelId": "dashboard-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c3"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"dashboard-item"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"dashboard-item1"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"dashboard-item2"
+							]
+						},
+						"c3": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-dashboard",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top-dashboard",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "dashboard-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"dashboard-item": {
+					"type": "dashboard-item",
+					"table": 2709061285,
+					"dashType": 0,
+					"dashName": "sales_by_product_category_grid",
+					"bsStyle": "primary",
+					"panelType": 1,
+					"icon": {
+						"glyph": "earphone"
+					},
+					"viewTab": true,
+					"editTab": true,
+					"addTab": true,
+					"initialTab": 0,
+					"hiddenDetails": {},
+					"detailsOptions": [],
+					"mapUpdateGridWhenMoved": true,
+					"height": "500px"
+				},
+				"dashboard-item1": {
+					"type": "dashboard-item",
+					"table": 1576970471,
+					"dashType": 1,
+					"dashName": "sales_by_product_category_chart_chart",
+					"bsStyle": "primary",
+					"panelType": 1,
+					"icon": {
+						"fa": "star-o"
+					},
+					"viewTab": true,
+					"editTab": true,
+					"addTab": true,
+					"initialTab": 0,
+					"hiddenDetails": {},
+					"detailsOptions": [],
+					"mapUpdateGridWhenMoved": true,
+					"height": "500px"
+				},
+				"dashboard-item2": {
+					"type": "dashboard-item",
+					"table": 2749073996,
+					"dashType": 0,
+					"dashName": "sqlView_grid",
+					"bsStyle": "primary",
+					"panelType": 1,
+					"icon": {
+						"glyph": "calendar"
+					},
+					"viewTab": true,
+					"editTab": true,
+					"addTab": true,
+					"initialTab": 0,
+					"hiddenDetails": {},
+					"detailsOptions": [],
+					"mapUpdateGridWhenMoved": true,
+					"height": "500px"
+				}
+			},
+			"dbProps": {},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Dashboard"
+	}
+}
